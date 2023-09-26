@@ -55,7 +55,7 @@ Capybara.register_driver :chrome do |app|
 end
 
 Capybara.javascript_driver = :chrome
-Lighthouse::Matchers.remote_debugging_port = 9222
+Lighthouse::Preferences.remote_debugging_port = 9222
 ```
 
 #### For Rspec

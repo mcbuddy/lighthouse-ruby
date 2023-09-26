@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "lighthouse-ruby"
   spec.version       = Lighthouse::Ruby::VERSION
   spec.authors       = ["Budi Sugianto"]
-  spec.email         = ["budi@teachable.com"]
+  spec.email         = ["hi@budisugianto.com"]
 
   spec.summary       = <<~DESC
     Ruby wrapper for lighthouse-cli command by 
@@ -13,13 +13,13 @@ Gem::Specification.new do |spec|
   DESC
 
   spec.description   = "Ruby wrapper for lighthouse-cli"
-  spec.homepage      = "https://github.com/UseFedora/lighthouse-ruby"
+  spec.homepage      = "https://github.com/mcbuddy/lighthouse-ruby"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["homepage_uri"]    = "https://github.com/UseFedora/lighthouse-ruby"
-  spec.metadata["source_code_uri"] = "https://github.com/UseFedora/lighthouse-ruby"
-  spec.metadata["changelog_uri"]   = "https://github.com/UseFedora/lighthouse-ruby/blob/master/CHANGELOG.md"
+  spec.metadata["homepage_uri"]    = "https://github.com/mcbuddy/lighthouse-ruby"
+  spec.metadata["source_code_uri"] = "https://github.com/mcbuddy/lighthouse-ruby"
+  spec.metadata["changelog_uri"]   = "https://github.com/mcbuddy/lighthouse-ruby/blob/master/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

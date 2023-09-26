@@ -35,14 +35,13 @@ module Lighthouse
 
       def get_lighthouse_cli
         system("npm install -g lighthouse") unless File.exist?(lighthouse_bin_locator)
-        system("lighthouse --help")
         print("Lighthouse Version:")
         system("lighthouse --version")
         lighthouse_bin_locator
       end
 
       def lighthouse_bin_locator
-        `which lighthouse`.chomp("\n")
+        `which lighthouse`.gsub!("\n", " ")
       end
 
     end

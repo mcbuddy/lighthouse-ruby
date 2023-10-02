@@ -14,7 +14,7 @@ module Lighthouse
       end
 
       def runner
-        @runner ||= proc { |cmd| `#{cmd}` }
+        @runner ||= proc { |cmd| `npx #{cmd}` }
       end
 
       def lighthouse_options
@@ -34,7 +34,7 @@ module Lighthouse
       private
 
       def get_lighthouse_cli
-        system("npm install -g lighthouse") unless File.exist?(lighthouse_bin_locator)
+        system("npm install lighthouse") unless File.exist?(lighthouse_bin_locator)
         print("Lighthouse Version:")
         system("lighthouse --version")
         lighthouse_bin_locator

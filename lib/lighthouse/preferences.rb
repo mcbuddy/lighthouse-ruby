@@ -14,7 +14,7 @@ module Lighthouse
       end
 
       def runner
-        @runner ||= proc { |cmd| `npx #{cmd}` }
+        @runner ||= proc { |cmd| `#{cmd}` }
       end
 
       def lighthouse_options
@@ -34,15 +34,9 @@ module Lighthouse
       private
 
       def get_lighthouse_cli
-        system("npm install lighthouse") if lighthouse_bin_locator.nil?
-        print("Lighthouse Version:")
-        system("lighthouse --version")
-        lighthouse_bin_locator
-      end
-
-      def lighthouse_bin_locator
         lighthouse_bin = `which lighthouse`
         lighthouse_bin.gsub!("\n", " ")
+        lighthouse_bin
       end
 
     end
